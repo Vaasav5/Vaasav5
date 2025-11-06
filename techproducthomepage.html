@@ -1,0 +1,142 @@
+<html>
+<head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f4;
+    }
+
+     header, footer{
+      background-color: #D84315; /* vibrant terracotta */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+
+     nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+     
+     nav a:hover {
+      text-decoration: underline;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1 style="font-size: 60px;">Techzone</h1>
+        <nav>
+            
+                <a href="phones.html">Phones</a>
+                <a href="tablets.html">Tablets</a>
+                <a href="speakers.html">Speakers</a>
+                <a href="smartwatches.html">Smartwatches</a>
+            
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            
+            <h2 style="font-size: 32px;">About TechZone</h2>
+            <p style="padding: 20px;">TechZone is your premier destination for cutting-edge technology and electronics. We offer a wide range of high-quality products from trusted brands.</p>
+            <p style="padding: 20px;">Founded with a passion for innovation, our mission is to make advanced technology accessible and easy to use for everyone. We curate the latest devices, perform strict quality checks, and provide clear product information to help you choose confidently.</p>
+            <ul>
+                <li>Carefully selected products from leading manufacturers</li>
+                <li>Detailed product reviews and comparisons</li>
+                <li>Hassle-free returns and warranty support</li>
+                <li>Regular deals and bundle offers</li>
+            </ul>
+            <p>Explore our product pages for phones, tablets, speakers, and smartwatches, or contact support for personalized recommendations.</p>
+        </section>
+
+        <section>
+            <div>
+                <h3 style="font-size: 32px;">Latest Smartphones</h3>
+                <p>Featuring advanced cameras and powerful processors</p>
+                <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Smartphone">
+            </div>
+            <div>
+                <h3 style="font-size: 32px;">Smart TVs</h3>
+                <p>4K resolution with smart features</p>
+                <img src="https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="TV">
+            </div>
+            <div>
+                <h3 style="font-size: 32px;">Bluetooth Speaker</h3>
+                <p>High-fidelity speakers and sound systems</p>
+               <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Speakers">
+            </div>
+        </section>
+
+        <section>
+            <h2 style="font-size: 32px;">Why Choose Us?</h2>
+            <ul>
+                <li>Premium Quality Products</li>
+                <li>Expert Customer Service</li>
+                <li>Fast Shipping</li>
+                <li>Competitive Prices</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="font-size: 32px;">Contact Us</h2>
+            <table cellspacing="10" border="0">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="subject">Subject:</label></td>
+                <td>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="sales">Sales</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td><textarea id="message" name="message" rows="4" cols="30" required></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send Message"></td>
+            </tr>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        Made by Vaasav Kapopara
+    </footer>
+</body>
+</html>
