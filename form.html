@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header, footer {
+  color: white;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff0000, #00ff00, #0000ff);
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3 {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea,
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.inline-options {
+  margin-top: 10px;
+}
+
+.inline-options input {
+  margin-right: 8px;
+}
+
+button {
+  margin-top: 25px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <h1>Product Inquiry</h1>
+  </header>
+
+  <main>
+    <form>
+      <h3>Your Name</h3>
+      <input type="text" name="name" placeholder="Enter your name" required />
+
+      <h3>Email Address</h3>
+      <input type="email" name="email" placeholder="Enter your email" required />
+
+      <h3>Select Product</h3>
+      <select name="product">
+        <option value="">Choose a product</option>
+        <option value="laptop">Laptop</option>
+        <option value="tablet">Tablet</option>
+        <option value="smartwatch">Smartwatch</option>
+        <option value="tv">TV</option>
+        <option value="speaker">Speaker</option>
+        <option value="headset">Headset</option>
+      </select>
+
+      <h3>Preferred Contact Method</h3>
+      <div class="inline-options">
+        <input type="radio" name="contact" value="email" checked /> Email
+        <input type="radio" name="contact" value="phone" /> Phone
+      </div>
+
+      <h3>Features You're Interested In</h3>
+      <div class="inline-options">
+        <input type="checkbox" name="features" value="battery" /> Battery Life
+        <input type="checkbox" name="features" value="display" /> Display Quality
+        <input type="checkbox" name="features" value="performance" /> Performance
+      </div>
+
+      <h3>Additional Comments</h3>
+      <textarea name="message" rows="5" placeholder="Type your message here..."></textarea>
+
+      <h3>Upload Screenshot or Document</h3>
+      <input type="file" name="upload" />
+
+      <button type="submit">Submit</button>
+    </form>
+  </main>
+
+  <footer>
+    <p style="font-size: 30px;">By  TechWorld </p>
+  </footer>
+</body>
+</html>
